@@ -28,6 +28,8 @@
                 onclick="setInterval(getRandomImage, 2000)">
             New Monkey
         </button>
+        <br> <br>
+        <span id="result" align="center"> </span>
         <script>
             function getRandomImage() {
                 //declare an array to store the images
@@ -37,7 +39,7 @@
                 randomImage[0] = "amadeus.png";
                 randomImage[1] = "ronaldkyle.jpg";
                 randomImage[2] = "gregory.jpg";
-                
+
 
                 //generate a number and provide to the image to generate randomly
                 var number = Math.floor(Math.random() * randomImage.length);
