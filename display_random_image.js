@@ -1,4 +1,4 @@
-function display_random_image() {
+function randomImg1() {
     var theImages = [{
         src: "amadeus.png",
     }, {
