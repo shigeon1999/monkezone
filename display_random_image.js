@@ -11,8 +11,6 @@ function display_random_image() {
     for (var i = 0, j = theImages.length; i < j; i++) {
         preBuffer[i] = new Image();
         preBuffer[i].src = theImages[i].src;
-        preBuffer[i].width = theImages[i].width;
-        preBuffer[i].height = theImages[i].height;
     }
 
     // create random image number
