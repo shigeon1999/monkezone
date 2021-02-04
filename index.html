@@ -25,9 +25,22 @@
 
     <div>
         <button id="jsstyle"
-                onclick="display_random_image.js();">
+                onclick="randomImg1()">
             New Monkey
         </button>
+        <script type="text/javascript">
+            function randomImg1() {
+                var myImages1 = new Array();
+                myImages1[1] = "amadeus.png";
+                myImages1[2] = "ronaldkyle.jpg";
+                myImages1[3] = "gregory.jpg";
+                var rnd = Math.floor(Math.random() * myImages1.length);
+                if (rnd == 0) {
+                    rnd = 1;
+                }
+                document.write('<img class="who" src="' + myImages1[rnd] + '">');
+            }
+        </script>
     </div>
 
 
