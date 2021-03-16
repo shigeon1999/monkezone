@@ -3,6 +3,13 @@
 <head>
     <title>The Monke Zone</title>
     <script data-ad-client="ca-pub-5723279237456036" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        function PlaySound() {
+            var sound = new Audio();
+            sound.src = "sound1.ogg";
+            document.getElementById(sound);
+            sound.play();
+        }</script>
     <style>
 
         body {
@@ -42,11 +49,13 @@
     <div>
         <style>
             .box {
-                position: absolute;
+                text-align: center;
+                position: center;
                 top: 325px;
                 height: auto;
-                width: 100%;
+                width: auto;
                 border: none;
+                object-position: center
             }
 
             img {
@@ -59,8 +68,9 @@
     </div>
 
     <div class="container">
+        <audio id="sound"> </audio>
         <button id="jsstyle"
-                onclick="getRandomImage()"
+                onclick="getRandomImage(); PlaySound()"
                 align="center">
             New Monkey
         </button>
