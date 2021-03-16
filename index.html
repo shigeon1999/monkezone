@@ -24,18 +24,18 @@
 <body>
 
     <div>
-        <IMG SRC="gorilla.gif" style="height: 244px; width: 102.5%;">
+        <IMG SRC="gorilla.gif" style="height: 244px; width: 100%;">
 
     </div>
 
     <style>
 
-        .horizontal-center {
-            margin: 0;
-            position: absolute;
-            right: 44.25%;
-            -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+        .container {
+            text-align:center;
+            position: center;
+            -ms-transform: translateX();
+            transform: translateX();
+            object-position: center
         }
     </style>
 
@@ -58,7 +58,7 @@
         </style>
     </div>
 
-    <div class="horizontal-center">
+    <div class="container">
         <button id="jsstyle"
                 onclick="getRandomImage()"
                 align="center">
