@@ -68,11 +68,15 @@
     </div>
 
     <div class="container">
-        <button id="jsstyle"
-                onclick="getScript()"
+        <button 
+                type="button"
+                class="btn btn-primary btn-lg"
+                id="START"
+                onclick="suedama()"
                 align="center">
             New Monkey
         </button>
+        <script src=""></script>
         <br> <br>
     </div>
     <div class="box">
@@ -85,11 +89,9 @@
                     Script[0] = getRandomImage(), PlaySound();
                     Script[1] = suedama(), screams(), invertbana(); 
 
-                    var Script = [0, 1, 1, 1, 1];
-                    var idx = Math.floor(Math.random() * Script.length);
-                    return Script[idx];
+                    var number = Math.floor(Math.random() * Script.length);
 
-                    return document.getElementById("buttonscripts").innerHTML = '"' + Script[idx] + '" ';;
+                    return document.getElementById("buttonscripts").innerHTML = '"' + Script[number] + '" ';;
 
                 }
 
@@ -125,22 +127,33 @@
        <span id="suedama" >
        <script>
            function suedama() {
-               return document.getElementById("suedama").innerHTML = '<img src="suedama.png">';
-           }
-
-           function screams() {
-               var sound = new Audio();
-               sound.src = "sound2.ogg";
-               document.getElementById(sound);
-               sound.loop = true;
-               sound.play()
-               
-           }
-
-           function invertbana() {
                document.body.style.backgroundImage = "url('bananainvert.png')";
                document.body.style.backgroundRepeat = repeat;
+               
+                   
+                  var sound = new Audio();
+                   sound.src = "sound2.ogg";
+                   document.getElementById(sound);
+                   sound.loop = true;
+                   sound.play()
+
+               
+
+                   
+                       return document.getElementById("suedama").innerHTML = '<img src="suedama.png">';
+
+               
+                    
+               
+               
+
+
+               
+
+              
            }
+
+          
        </script>
        </span>
     </div>
