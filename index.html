@@ -10,7 +10,13 @@
             document.getElementById(sound);
             sound.play();
         }</script>
-    
+    <script type="text/javascript">
+         <!--
+        function suedamaredirect() {
+            window.location = "https://monke.zone/suedama";
+        }
+        //-->
+    </script>
      
     <style>
         body {
@@ -97,7 +103,7 @@
 
 
                     script[0] = getRandomImage(), PlaySound();
-                    script[1] = suedama();
+                    script[1] = suedamaredirect();
                     
 
 
@@ -139,57 +145,12 @@
             </script>
         </span>
 
-        <span id="suedama">
-            <script>
-                function suedama() {
+        
 
-
-
-
-
-
-
-
-
-                    return document.getElementById("suedama").innerHTML = '<img src="suedama.png">';
-
-
-
-
-
-
-
-
-
-
-                }
-
-
-            </script>
-        </span>
-
-        <span id="screams">
-            <script>
-                function screams() {
-                    var sound = new Audio();
-                    sound.src = "sound2.ogg";
-                    document.getElementById(sound);
-                    sound.loop = true;
-                    sound.play()
-                }
-
-            </script>
-        </span>
     </div>
 
 
-    <div id="scripts">
-        <script>
-            function sueScripts() {
-                var scripts = [suedama(), invertbana()]
-            }
-        </script>
-    </div>
+    
 
 
 
