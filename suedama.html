@@ -91,15 +91,20 @@
         <button type="button"
                 class="btn btn-primary btn-lg"
                 id="START"
-                onclick="getScript()"
+                onclick=""
                 align="center">
             New Monkey
         </button>
         <script src=""></script>
         <br> <br>
+        <script type="text/javascript">
+            document.getElementById("START").onclick = function () {
+                location.href = "https://monke.zone/";
+            };
+        </script>
         <span id="getScript">
             <script>
-    function getScript() {
+                function getScript() {
                     var script = new Array();
 
 
