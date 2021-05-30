@@ -40,14 +40,7 @@
 </head>
 
 <body>
-    <span id="invertbana">
-        <script>
-            function invertbana() {
-                document.body.style.backgroundImage = "url('bananainvert.png')";
-                document.body.style.backgroundRepeat = repeat;
-            }
-        </script>
-    </span>
+    
 
     <div>
         <IMG SRC="gorilla.gif" style="height: 244px; width: 100%;">
@@ -107,7 +100,7 @@
                     
 
 
-                    var number = Math.floor((Math.random() * 2));
+                    var number = Math.floor(Math.random() * script.length);
 
                     return document.getElementById("getScript").innerHTML = '"' + script[number] + '" ';;
 
