@@ -10,13 +10,7 @@
             document.getElementById(sound);
             sound.play();
         }</script>
-    <script type="text/javascript">
-         <!--
-        function suedamaredirect() {
-            window.location = "https://monke.zone/suedama";
-        }
-        //-->
-    </script>
+    
      
     <style>
         body {
@@ -87,7 +81,7 @@
                 align="center">
             New Monkey
         </button>
-        
+
         <br> <br>
         <span id="getScript">
             <script>
@@ -95,19 +89,26 @@
                     var script = new Array();
 
 
-                    script[0] = getRandomImage(), PlaySound();
-                    script[1] = suedamaredirect()
-                    
+
+                    script[0] = suedamaredirect();
+                    script[1] = getRandomImage(), PlaySound();
 
 
                     var number = Math.floor(Math.random() * script.length);
 
-                    return document.getElementById("getScript").innerHTML = script[number] ;;
+                    return document.getElementById("getScript").innerHTML = script[number];;
 
                 }
 
             </script>
         </span>
+        <script>
+
+            function suedamaredirect() {
+                window.location = "suedama";
+            }
+
+        </script>
     </div>
     <div class="box">
 
